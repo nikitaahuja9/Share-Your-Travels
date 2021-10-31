@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="page.css">
+
+    <title>Travel Photos</title>
+</head>
+
+<body>
+
+    <nav class="navbar top-bar">
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link link-dark top-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-box-arrow-right" viewBox="0 0 18 18">
+                        <path fill-rule="evenodd"
+                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                    </svg>
+                    Logout</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark top-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-person-fill" viewBox="0 0 18 18">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    Profile</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark top-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 18 18">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    Favorites</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid spacing-style">
+            <a class="navbar-brand" href="#">Share Your Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link spacing-style2" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link spacing-style2" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link spacing-style2" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle spacing-style2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Countries</a></li>
+                            <li><a class="dropdown-item" href="#">Continents</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <div class="input-group spacing-style2">
+                                <input type="text" class="form-control" placeholder="search ..." aria-label="Search"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <span class="input-group-text spacing-style3 submit" id="basic-addon1">
+                                <a class="submit-button link-light" href="#">
+                                    Submit
+                                </a>
+                            </span>
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid center-content">
+        <div class="row">
+
+            <div class="col-md-2">
+
+                <div class="list-group spacing-style-left">
+                    <a href="#"
+                        class="list-group-item list-group-item-primary common-heading-style link-light">Continents</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Africa</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Asia</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Europe</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">North America</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Oceania</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">South America</a>
+                </div>
+
+                <div class="list-group spacing-style-left">
+                    <a href="#" class="list-group-item list-group-item-primary common-heading-style link-light">Popular
+                        Countries</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Canada</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Germany</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">Ghana</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">North America</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style" aria-current="true">United
+                        Kingdom</a>
+                    <a href="#" class="list-group-item list-group-item-action common-style">United States</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-10 specific-style">
+
+                <div class="row">
+
+                    <div class="col-md-8 temple-image-style">
+                        <img src="temple.jpg" alt="Temple of Hephaistos" class="img-fluid" />
+                        <div class="description-style">
+                            <p>Located on western perimeter of Agora in Athens. Built in 460-415
+                                BCE, it is the best preserved temple of antiquity.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="temple-style">Temple of Hephaistos</h3>
+                        <div class="card right-card-style">
+                            <div class="card-body">
+                                <p>By:
+                                    <a href="#" class="common-style">Ellie Sullivan</a>
+                                </p>
+                                <p> Country:
+                                    <a href="#" class="common-style">Greece</a>
+                                </p>
+                                <p> City:
+                                    <a href="#" class="common-style">Athens</a>
+                                </p>
+                                <p>
+                                    Taken on: August 8, 2017
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="btn-group container-fluid button-style" role="group">
+                            <button type="button" class="btn btn-outline-dark button-effect">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark button-effect">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5z" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark button-effect">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                                    <path
+                                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark button-effect">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <h5 class="tag-style">Tags</h5>
+
+                        <div class="card right-card-style">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-sm btn-dark tag-style" disabled>ancient</button>
+                                <button type="button" class="btn btn-sm btn-dark tag-style" disabled>garden</button>
+                                <button type="button" class="btn btn-sm btn-dark tag-style" disabled>hill</button>
+                                <button type="button" class="btn btn-sm btn-dark tag-style" disabled>monument</button>
+                                <button type="button" class="btn btn-sm btn-dark tag-style" disabled>sunshine</button>
+                                <button type="button" class="btn btn-sm btn-dark tag-style" disabled>temple</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="related-style">Related Photos</h5>
+
+                <div class="container-fluid main-content-end">
+                    <div class="row g-4">
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="one.jpg" alt="Ekklisia Agii Isidori" class="img-fluid" />
+                                    <h5 class="card-title mb-3 related-style-2">Ekklisia Agii Isidori</h5>
+
+                                    <button type="button" class="btn btn-outline-dark button-effect-2">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-eye" viewBox="0 0 18 18">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                        </svg>
+
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark button-effect-3">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 18 18">
+                                            <path
+                                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                        </svg>
+
+                                        Favorite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="two.jpg" alt="Theatre of Dionysus" class="img-fluid" />
+                                    <h5 class="card-title mb-3 related-style-2">Theatre of Dionysus</h5>
+
+                                    <button type="button" class="btn btn-outline-dark button-effect-2">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-eye" viewBox="0 0 18 18">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                        </svg>
+
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark button-effect-3">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 18 18">
+                                            <path
+                                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                        </svg>
+
+                                        Favorite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="three.jpg" alt="Roman Agora" class="img-fluid" />
+                                    <h5 class="card-title mb-3 related-style-2">Roman Agora</h5>
+
+                                    <button type="button" class="btn btn-outline-dark button-effect-2">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-eye" viewBox="0 0 18 18">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                        </svg>
+
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark button-effect-3">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 18 18">
+                                            <path
+                                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                        </svg>
+
+                                        Favorite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="four.jpg" alt="Temple of Asclepius" class="img-fluid" />
+                                    <h5 class="card-title mb-3 related-style-2">Temple of Asclepius</h5>
+
+                                    <button type="button" class="btn btn-outline-dark button-effect-2">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-eye" viewBox="0 0 18 18">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                        </svg>
+
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark button-effect-3">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 18 18">
+                                            <path
+                                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                        </svg>
+
+                                        Favorite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer-style">
+        <footer class="py-1 container-fluid">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Share YourTravels</h4>
+                    <p>This is a case study from the textbook <span class="book-name">Fundamentals of Web Development</span>. This book is
+                        published
+                        by Pearson Ed, and is the only textbook that covers the essentials of the entire
+                        field
+                        of contemporary
+                        web development.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Headquarters</h5>
+                            <p>
+                                Mount Royal University <br />
+                                4825 Mount Royal Gate SW <br />
+                                Calgary, Canada, T3E GK6
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 left-style">
+                            <h5>Follow Us</h5>
+                            <button type="button" class="btn btn-outline-dark color-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-camera" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+                                    <path
+                                        d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-dark color-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-dark color-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                                    <path
+                                        d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-dark color-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-dark color-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path
+                                d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                        </svg>
+                        Recent Posts
+                    </h5>
+
+                    <div class="d-flex row">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="five.jpg" alt="Calgary" class="img-fluid image-icon">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <a href="#" class="post-style post-text link-light">Calgary in the snow</a>
+                                <p class="post-style">5 minutes ago</p>
+                                <hr />
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="six.jpg" alt="Mountain Climbing" class="img-fluid image-icon">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <a href="#" class="post-style post-text link-light">Mountain Climbing</a>
+                                <p class="post-style">11 minutes ago</p>
+                                <hr />
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="seven.jpg" alt="Nova Scotia" class="img-fluid image-icon">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <a href="#" class="post-style post-text link-light">Nova Scotia</a>
+                                <p class="post-style">23 minutes ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 17 17">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                        </svg>
+                        Contact us
+                    </h5>
+
+                    <form action="#">
+                        <div class="form-group input_field">
+                            <input type="text" class="form-control input_field" placeholder="Enter name ..." id="name"
+                                name="name">
+                        </div>
+                        <div class="form-group input_field">
+                            <input class="form-control input_field" placeholder="Enter email ..." type="email" id="email"
+                                name="email">
+                        </div>
+                        <div class="form-group input_field">
+                            <textarea id="message" name="message" 
+                                class="form-control input_field" cols="30" rows="3"
+                                placeholder="Enter message ..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button-type form-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer-bottom container-fluid">
+            <p class="text-center breadcrumb-text">Copyright &copy; 2017 Creative Commons ShareAlike</p>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-content-2">
+                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-text link-light">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-text link-light">About</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-text link-light">Contact</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-text link-light">Browse</a></li>
+                </ol>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
